@@ -1,0 +1,2 @@
+-keep class com.ls.feature_plaza.bean.**{*;}
+-keep class com.ls.feature_plaza.ui.image.ImageDetailFragment

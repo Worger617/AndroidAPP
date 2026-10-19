@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="112.91dp"
+            android:layout_height="12.52dp"
+            android:layout_marginLeft="14.5dp"
+            android:layout_marginTop="5.5dp"
+            android:src="@mipmap/icon_logo"
+            app:layout_constraintBottom_toBottomOf="@id/rg_indicator"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_test"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            -->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="测试"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_test"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@id/btn_test"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <RadioGroup
+
+            android:id="@+id/rg_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginRight="32dp"
+            android:orientation="horizontal"
+
+            app:layout_constraintEnd_toStartOf="@id/iv_notify"
+            app:layout_constraintStart_toEndOf="@id/iv_logo"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/rb_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/icon_video_list_indicator"
+                android:drawablePadding="4dp"
+                android:text="推荐" />
+
+            <RadioButton
+                android:id="@+id/rb_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/icon_video_list_indicator"
+                android:drawablePadding="4dp"
+                android:text="日报" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/iv_notify"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5.5dp"
+            android:layout_marginRight="14.5dp"
+            android:src="@mipmap/icon_notify"
+            app:layout_constraintBottom_toBottomOf="@+id/rg_indicator"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rg_indicator" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

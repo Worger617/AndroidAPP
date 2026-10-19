@@ -1,0 +1,63 @@
+package com.ls.network.bean;
+
+/**
+ * 当前项目 网络请求中返回的数据类型基类
+ *
+ * @param <T> T指的是具体返回的数据类型
+ */
+public class ResBase<T> {
+
+    /**
+     * code : 1
+     * msg : 推荐
+     * time : 1735106568
+     * data : {"count":190,"list":[{"id":128,"title":"日本经典漫画，给粉丝写了一份告白信","image":"http://ali-img.kaiyanapp.com/cover/20230420/9fdbffbfbd5b05e42b5e4cff1df8af17.jpg?imageMogr2/auto-orient/thumbnail/640x/interlace/1/quality/80/format/webp","video_file":"http://t-cdn.kaiyanapp.com/1682091366375_be60972b.mp4","description":"各种日漫经典人物聚集在一起给粉丝写了一封告白信，致阅读正版漫画的每一位粉丝，并发起抵制盗版漫画的活动。ABJ 是一家综合法人协会，致力于根除盗版漫画并增加正确阅读漫画的人数。From STOP!海賊版","duration":"03:12","user_id":1,"author":"admin","avatar":"https://titok.fzqq.fun/uploads/20240826/50d42d478612bb3f289dd6258caa046b.jpeg"},{"id":129,"title":"三得利插画感广告，满屏都是治愈色","image":"http://ali-img.kaiyanapp.com/cover/20230417/20cbaf4f63cdaf864e132771de812c24.jpg?imageMogr2/auto-orient/thumbnail/640x/interlace/1/quality/80/format/webp","video_file":"http://t-cdn.kaiyanapp.com/1681829377291_8fd4cbcd.mp4","description":"日本三得利创意广告，插画感十足，满屏的治愈色彩都要溢出来了。这支短片将真人与动画相结合，清新治愈的日系色彩，温暖而又美好，简直太有创意了。From サントリー公式チャンネル「SUNTORY」","duration":"01:50","user_id":1,"author":"admin","avatar":"https://titok.fzqq.fun/uploads/20240826/50d42d478612bb3f289dd6258caa046b.jpeg"},{"id":130,"title":"全民灌肠计划，这支广告玩的有点大","image":"http://ali-img.kaiyanapp.com/035d50b81f26550ad6b6a984cfbf3cb4.jpeg?imageMogr2/auto-orient/thumbnail/640x/interlace/1/quality/80/format/webp","video_file":"http://t-cdn.kaiyanapp.com/1682609003870_e0a45647.mp4","description":"Travis Barker 这位全身遍布纹身的帅酷鼓手凭借着自己职业的态度、技术和天分，已成为摇滚舞台上最具影响力的鼓手之一，被誉为世界级朋克鼓王。在这支短片中，他说出了成功的秘诀「灌肠」，「全民灌肠计划」正在进行中，你还在等什么呢。From Liquid Death","duration":"02:40","user_id":1,"author":"admin","avatar":"https://titok.fzqq.fun/uploads/20240826/50d42d478612bb3f289dd6258caa046b.jpeg"},{"id":131,"title":"泰国金融广告，大胆预测 10 年后的人类","image":"http://ali-img.kaiyanapp.com/d49b4b599ca45d0c1f47b2cb5b4f5d1b.jpeg?imageMogr2/auto-orient/thumbnail/640x/interlace/1/quality/80/format/webp","video_file":"http://t-cdn.kaiyanapp.com/1681355921625_7295fcc8.mp4","description":"泰国 visa 金融广告。因为每个人都有不同的信仰，每个人都希望自由地做自己。未来是没有种族、领土、语言的时代，也没有人将美好生活定义为有房子，以及小孩女人必须喜欢粉色，每个人都有做自己的自由，你不仅仅是你自己。From FirstChoiceChannel","duration":"02:07","user_id":1,"author":"admin","avatar":"https://titok.fzqq.fun/uploads/20240826/50d42d478612bb3f289dd6258caa046b.jpeg"},{"id":132,"title":"日本分屏温情广告：60 秒的亲子温暖","image":"http://ali-img.kaiyanapp.com/cover/20230412/8e4bdd503ec5655de179cc8e5c7d7e22.jpg?imageMogr2/auto-orient/thumbnail/640x/interlace/1/quality/80/format/webp","video_file":"http://t-cdn.kaiyanapp.com/1681392720741_b840cc78.mp4","description":"日本 Oronine 分屏创意广告。Oronine 全名娥罗纳英 H 软膏，是日本大冢制药生产的一只外用药膏。育儿是一项艰苦的工作，但是当你清理掉孩子的食物溢出物，擦掉他的尿液，把他轻轻放在床上，这一切都需要用到手，如果你的手变得干裂或被划伤，请让 Oronine 帮助您。From 大塚製薬 公式チャンネル","duration":"01:00","user_id":1,"author":"admin","avatar":"https://titok.fzqq.fun/uploads/20240826/50d42d478612bb3f289dd6258caa046b.jpeg"},{"id":133,"title":"神反转还是得看泰国，一切结果皆有可能","image":"http://ali-img.kaiyanapp.com/4d38a886d0a628566118a47f590cebf1.jpeg?imageMogr2/auto-orient/thumbnail/640x/interlace/1/quality/80/format/webp","video_file":"http://t-cdn.kaiyanapp.com/1682516876569_96490dcd.mp4","description":"反转广告还得看泰国，女孩酷爱架子鼓，一个人在卧室对着空气都能敲老长时间，妈妈看见女儿沉浸其中，于是默默的去为女儿准备了一份神秘的礼物。From Nawapol Thamrongrattanarit","duration":"02:46","user_id":1,"author":"admin","avatar":"https://titok.fzqq.fun/uploads/20240826/50d42d478612bb3f289dd6258caa046b.jpeg"},{"id":134,"title":"2023 安迪国际广告获奖作品「桥」","image":"http://ali-img.kaiyanapp.com/18414ed845c1f21f3a52f4a06103f54a.jpeg?imageMogr2/auto-orient/thumbnail/640x/interlace/1/quality/80/format/webp","video_file":"http://t-cdn.kaiyanapp.com/1682603491009_ee981460.mp4","description":"这是一部关于精神和动物健康的短片，灵感来自一个关于孤独的人和被遗弃的狗在纽约街头形成拯救生命的纽带的真实故事。一个抑郁的男人想要结束自己的生命，没想到却被一只被遗弃在路边的流浪狗改变了自己的人生。短片中的桥以布鲁克林大桥为原型，配乐来自美国歌手 Lou Reed 的知名歌曲「Perfect Day」。From PAWS NY","duration":"04:22","user_id":1,"author":"admin","avatar":"https://titok.fzqq.fun/uploads/20240826/50d42d478612bb3f289dd6258caa046b.jpeg"},{"id":135,"title":"日系慵懒风广告：如果东京市中心有一座山","image":"http://ali-img.kaiyanapp.com/e2ee43dbe7b1dc8d603b8470f75d1bdc.jpeg?imageMogr2/auto-orient/thumbnail/621x/interlace/1/quality/80/format/webp","video_file":"http://t-cdn.kaiyanapp.com/620affe7dca360e3b903d908ad508385_720P.mp4","description":"如果在东京市中心有一座山，空气必须清新，一阵惬意的微风吹过，惬意无比。这时一只松鼠来到阳台，小镇上的居民起得有点早，这里的人互相送花。在那之后，只是看着那座山，不会感到焦虑和孤独。From 森永乳業公式チャンネル","duration":"01:30","user_id":1,"author":"admin","avatar":"https://titok.fzqq.fun/uploads/20240826/50d42d478612bb3f289dd6258caa046b.jpeg"},{"id":136,"title":"爱情，猝不及防","image":"http://ali-img.kaiyanapp.com/f3a867e5bfec2d4b5316bac952f7ae59.jpeg?imageMogr2/auto-orient/thumbnail/640x/interlace/1/quality/80/format/webp","video_file":"http://t-cdn.kaiyanapp.com/1476342936888_ed83d53b.mp4","description":"百乐水果汽水是泰国老牌饮品，这条创意广告中的面店老板与老板娘，看似跟一般做小生意的忙碌夫妻没两样，却因为一句话剧情神逆转。姜还是老的辣！一瓶「汽水」也能耍浪漫。From 泰國清邁象","duration":"00:29","user_id":1,"author":"admin","avatar":"https://titok.fzqq.fun/uploads/20240826/50d42d478612bb3f289dd6258caa046b.jpeg"},{"id":137,"title":"打工人的真实写照：困在酒吧的灵魂","image":"http://ali-img.kaiyanapp.com/4e409095d1cc14e03da1da5e60d8cb6d.jpeg?imageMogr2/auto-orient/thumbnail/640x/interlace/1/quality/80/format/webp","video_file":"http://t-cdn.kaiyanapp.com/1682173526207_7620aec4.mp4","description":"韩国啤酒品牌 Heineken 创意广告，被困在酒吧的灵魂。短片通过分屏的方式呈现打工人内心真实想法，人在工作，心已经飘在酒吧了，正在和朋友们举杯共饮，内容过于真实。From Admium 119","duration":"00:48","user_id":1,"author":"admin","avatar":"https://titok.fzqq.fun/uploads/20240826/50d42d478612bb3f289dd6258caa046b.jpeg"}]}
+     */
+
+    private int code;//服务端返回的结果码，1表示请求成功，其他数值表示请求异常
+    private String msg;//异常消息提示
+    private String time;//时间
+    private T data;//具体返回的数据类型
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return "ResBase{" +
+                "code=" + code +
+                ", msg='" + msg + '\'' +
+                ", time='" + time + '\'' +
+                ", data=" + data +
+                '}';
+    }
+}

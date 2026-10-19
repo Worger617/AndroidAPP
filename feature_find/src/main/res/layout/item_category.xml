@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="com.ls.data_video.bean.ResFindCategory" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="108dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_category"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            imageUrl="@{data.icon}"
+            tools:src="@mipmap/icon_notify" />
+
+
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="#ff444444"
+            android:text="@{data.name}"
+            android:textSize="14sp"
+            tools:text="广告" />
+
+    </LinearLayout>
+</layout>

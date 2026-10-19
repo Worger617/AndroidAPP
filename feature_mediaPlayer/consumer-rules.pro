@@ -1,0 +1,2 @@
+-keep class com.ls.mediaplayer.ui.categorylist.CategoryListFragment
+-keep class com.ls.mediaplayer.ui.videolist.VideoListFragment
