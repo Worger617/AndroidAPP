@@ -1,3 +1,4 @@
+# 默认忽略规则
 *.iml
 .gradle
 /local.properties
@@ -13,3 +14,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# 忽略Keystore文件
+*.jks
+*.keystore
